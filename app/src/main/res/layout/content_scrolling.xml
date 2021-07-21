@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CommandeActivity"
+    tools:showIn="@layout/activity_commande">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personaliser votre salade"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textColor="@color/yellow" />
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/gris">
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choisissez_votre_base"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:textColor="@color/black">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="@color/colore_one"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bougour"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Riz"
+                    android:textAlignment="center"
+                    android:textColor="@color/colore_one"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Laitue"
+                    android:textAlignment="center"
+                    android:textColor="@color/colore_one"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Pates Complet"
+                    android:textAlignment="center"
+                    android:textColor="@color/colore_one" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/img_b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_default"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseboulgour" />
+                <ImageButton
+                    android:id="@+id/img_b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/baseriz"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_default">
+                </ImageButton>
+                <ImageButton
+                    android:id="@+id/img_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/baselaitue"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_default">
+                </ImageButton>
+                <ImageButton
+                    android:id="@+id/img_b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/basepatecomplete"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_default">
+                </ImageButton>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrédients pricipales"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:background="@color/gris">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prix : 4DT"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Crecette miel amande 4.8dt"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Crevette Nature"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Crevette épicié"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Champignon"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingcrevamande"/>
+                        <ImageButton
+                            android:id="@+id/img_42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingcrevnat"/>
+
+                        <ImageButton
+                            android:id="@+id/img_43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingcrevepic"/>
+
+                        <ImageButton
+                            android:id="@+id/img_44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingchamp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gris">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prix : 3 DT"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp"
+                    >
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Escalope au herbes"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Escalope miel sésame"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Escalope épicié"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingscalopeherb"/>
+
+                        <ImageButton
+                            android:id="@+id/img_32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingscalopemiel"/>
+
+                        <ImageButton
+                            android:id="@+id/img_33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingescalopeepic"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Filet de boeuf et Parmeson"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Salacube et Mozzarella"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Ananas"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingfromageparmesan"/>
+
+                        <ImageButton
+                            android:id="@+id/img_35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingstracciatella"/>
+
+                        <ImageButton
+                            android:id="@+id/img_36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingananas"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Thon"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Tomate séchée"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Noix"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingthon"/>
+
+                        <ImageButton
+                            android:id="@+id/img_38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingtomateseche"/>
+
+                        <ImageButton
+                            android:id="@+id/img_39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingnoix"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.5 DT"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Jambon"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Abricot"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Piment Aubergine"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Haricot Rouge"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/img_21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingjambon"/>
+                        <ImageButton
+                            android:id="@+id/img_22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingabricotsec"/>
+
+                        <ImageButton
+                            android:id="@+id/img_23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingaubergine"/>
+
+                        <ImageButton
+                            android:id="@+id/img_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingharricotrouge"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Onion Caramélisé"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Tomate cerise"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Mais"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Dattes et kiwi"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingonioioncaram"/>
+
+                        <ImageButton
+                            android:id="@+id/img_26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingtomatecerice"/>
+
+                        <ImageButton
+                            android:id="@+id/img_27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingmais"/>
+                        <ImageButton
+                            android:id="@+id/img_28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingdattekiwi"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Abricots Raison sec"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Noisette"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pomme de terre épicée"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sardine marinée"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingabricotsec"/>
+
+                        <ImageButton
+                            android:id="@+id/img_210"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingnoisette"/>
+
+                        <ImageButton
+                            android:id="@+id/img_211"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingpommedeterreepice"/>
+                        <ImageButton
+                            android:id="@+id/img_212"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingsardine"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gris">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 DT"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Betterave"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Piment et concombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Carotte et pomme de terre"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Choux vert et Laitue"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingbeterave"/>
+
+                        <ImageButton
+                            android:id="@+id/img_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingpimentcomcombre"/>
+
+                        <ImageButton
+                            android:id="@+id/img_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingcarottepommedeterre"/>
+                        <ImageButton
+                            android:id="@+id/img_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingchou"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lentille"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Oeuf poché"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Olive"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Oeuf"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/inglentilles"/>
+
+                        <ImageButton
+                            android:id="@+id/img_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingoeufpoche"/>
+
+                        <ImageButton
+                            android:id="@+id/img_17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingolive"/>
+                        <ImageButton
+                            android:id="@+id/img_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingoeuf"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gris">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.5 DT"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Zesta de citron"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Graine de chia"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Graine de tournesol"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Poulet au Sésame"
+                            android:textAlignment="center"
+                            android:textColor="@color/colore_one"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_051"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingzestaciron"/>
+
+                        <ImageButton
+                            android:id="@+id/img_052"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/inggraintournesol"/>
+
+                        <ImageButton
+                            android:id="@+id/img_053"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingchia"/>
+                        <ImageButton
+                            android:id="@+id/img_054"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/roundcorner"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ingsesame"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choisir votre sauce"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce Vinaigrette"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce miel moutarde"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce asiatique"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce miel balsamique"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/saucevinaigrette"/>
+                    <ImageButton
+                        android:id="@+id/img_s2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/saucemielmoutarde"/>
+
+                    <ImageButton
+                        android:id="@+id/img_s3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sauceasiatique"/>
+                    <ImageButton
+                        android:id="@+id/img_s4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/saucemielbalsamique"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce épicée"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce grecque"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce agrumes"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sauce Pesto"
+                        android:textAlignment="center"
+                        android:textColor="@color/colore_one"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_s5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sauceepice"/>
+
+                    <ImageButton
+                        android:id="@+id/img_s6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/saucegrecque"/>
+
+                    <ImageButton
+                        android:id="@+id/img_s7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sauceargume"/>
+                    <ImageButton
+                        android:id="@+id/img_s8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/saucepesto"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gris">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajoutez une repas"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:id="@+id/btn_ajout"
+                android:background="@drawable/button_default"
+                android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalisez votre commande"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:id="@+id/btn_tofact"
+            android:background="@drawable/button_default"
+            android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

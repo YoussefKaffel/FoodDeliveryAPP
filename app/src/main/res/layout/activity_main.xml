@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_200">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+            android:scaleType="fitCenter">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logosmall"
+                android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textSize="48px"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="16dp"
+        android:padding="16sp"
+        android:textColor="@color/green1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:text="@string/text2"
+        android:layout_margin="25dp"
+        android:textSize="32px"
+        android:textColor="@color/green2"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/button_commander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Passer une commande"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/button_default"
+        android:textColor="@color/colore_one"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="On dispose d'un service livraison"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:textColor="@color/colore_one">
+    </TextView>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

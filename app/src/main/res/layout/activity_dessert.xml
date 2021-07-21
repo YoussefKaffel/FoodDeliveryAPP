@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DessertActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisissez votre dessert"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/button_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarte Citron  5.9DT"
+            android:layout_weight="1"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Tiramisu Café  6.8DT"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Cheese Cake Caramel 6.9DT"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/d_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/tartecitron"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:id="@+id/d_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/tiramisucafe"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+            <ImageButton
+                android:id="@+id/d_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/cheesecakecaramel"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+
+                />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Tiramisu Nutella 8.9DT"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Red Velvet 6.9DT"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Fondant Chocolat  6.5DT"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/d_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/tiramisuspeculoos"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/d_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/redvelvet"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/d_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/fondantchoco"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_plate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Ajoutez un repas"
+            android:layout_margin="2dp" />
+
+        <Button
+            android:id="@+id/facture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Passer à la facture"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
