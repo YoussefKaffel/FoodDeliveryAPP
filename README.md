@@ -47,16 +47,3 @@ Connect an Android device to your development machine.
 
 * Install the debug APK on your device `./gradlew installDebug`
 * Start the APK: `<path to Android SDK>/platform-tools/adb -d shell am start io.keen.client.android.example/io.keen.client.android.example.MyActivity`
-
-
-## Using the Sample App
-
-Each time you press the "Send Event!" button the sample app queues an event to be sent to the Keen API with an increasing
-counter. Note that the events will not actually be sent until the activity's `onPause` method is called, so you will need
-to exit the app or otherwise cause `onPause` to be called to cause events to be sent. (Rotating your device to cause an
-orientation change is one trick, but you can also just exit the app and re-open it.)
-
-You can press the "Query!" button to issue a count query on the same collection with a timeframe of `this_24_hours`. The
-result will be shown in a toast.
-
-You should also be able to see the events show up in queries issued via the API or the web UI for your project.
