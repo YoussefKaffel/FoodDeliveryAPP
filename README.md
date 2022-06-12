@@ -2,7 +2,7 @@
 =============================
 
 This is a sample Android App that uses java and xml
-with awesome user expirience and interface.
+with awesome user experience and interface.
 
 ## Building the Sample App
 
